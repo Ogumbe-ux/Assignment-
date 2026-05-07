@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    justify-content: end;
+    gap: 10px;
+    border-bottom: 1px solid grey;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: -20px;
+}
+button:hover{
+    background-color: grey;
+}
+body{
+    font-family: Arial, sans-serif;
+}
+.title{
+    font-weight: bold;
+    padding: 20px;
+    text-transform: capitalize;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    /* justify-items: end; */
+}
+.big-title{
+    font-size: 60px;
+}
+.small-title{
+    font-size: 20px;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 20%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    background-color: black;
+    color: white;
+    height: auto;
+    padding: 5px 10px;
+    border-radius: 30px;
+}
+.images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0px;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+}
+.photo-1{
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+}
+.text{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 500px;
+}
+.big-text{
+    font-size: 40px;
+    font-weight: bold;
+}
+.photo-2{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: 500px;
+}
+.photo-3{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.photo-4{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.photo-5{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.photo-6{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+@media (max-width: 600px) {
+    .images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
